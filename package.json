@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "watch": "npx tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "part1": "ts-node day1/part1.ts"
+    "part1": "ts-node day1/part1.ts",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
+    "@babel/preset-typescript": "^7.23.3",
     "@types/node": "^20.10.3",
     "babel-jest": "^29.7.0",
     "ts-jest": "^29.1.1",
