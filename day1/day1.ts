@@ -24,7 +24,7 @@ export const calculateSum = (
 };
 
 export const part1 = async (filePath: string) => {
-  const file = await open('day1/input.txt');
+  const file = await open(filePath);
 
   let sum = 0;
 
