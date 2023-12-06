@@ -28,16 +28,14 @@ export const part1 = async (filePath: string) => {
 
   let sum = 0;
 
-  if (filePath) {
-    for await (const line of file.readLines()) {
-      const numbers = getNumbers(line);
-  
-      const result = calculateSum(numbers.firstNumberAsString, numbers.secondNumberAsString);
+  for await (const line of file.readLines()) {
+    const numbers = getNumbers(line);
 
-      sum += result;
-    }
-    return sum;
+    const result = calculateSum(numbers.firstNumberAsString, numbers.secondNumberAsString);
+
+    sum += result;
   }
+  return sum;
 }
 
 part1('day1/input.txt');

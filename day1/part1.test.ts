@@ -16,4 +16,11 @@ describe('Day 1 Part 1', () => {
     const expectedValue = { firstNumberAsString: '1', secondNumberAsString: '2' };
     expect(numbers).toEqual(expectedValue);
   });
+
+  test('should return the numbers 1 and 2 as strings', () => {
+    const numbers = getNumbers(mockData[0]);
+
+    const expectedValue = { firstNumberAsString: '1', secondNumberAsString: '2' };
+    expect(numbers).toEqual(expectedValue);
+  });
 });
